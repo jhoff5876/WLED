@@ -42,8 +42,8 @@ jobs:
     needs: get_default_envs
     strategy:
       fail-fast: false
-      matrix:
-        environment: ${{ fromJSON(needs.get_default_envs.outputs.environments) }}
+      environment: ["seengreat_hub75_s3"]matrix:
+     
     steps:
     - uses: actions/checkout@v4
     - name: Apply release config
