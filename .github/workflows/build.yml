@@ -42,7 +42,8 @@ jobs:
     needs: get_default_envs
     strategy:
       fail-fast: false
-      environment: ["seengreat_hub75_s3"]matrix:
+      matrix:
+        environment: ["seengreat_hub75_s3"]
      
     steps:
     - uses: actions/checkout@v4
